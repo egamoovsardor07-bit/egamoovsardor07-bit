@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shohruxbek Egamov | Frontend Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; background:#080808; }
+    .gradient-text {
+      background:linear-gradient(90deg,#a78bfa,#6366f1,#38bdf8);
+      -webkit-background-clip:text;
+      color:transparent;
+    }
+    .glass { background:rgba(255,255,255,.035); border:1px solid rgba(255,255,255,.09); }
+    .glow { box-shadow:0 0 70px rgba(124,58,237,.15); }
+    .reveal { opacity:0; transform:translateY(25px); transition:.7s; }
+    .reveal.show { opacity:1; transform:translateY(0); }
+  </style>
+</head>
+
+<body class="text-white">
+
+<!-- NAVBAR -->
+<header class="fixed top-0 w-full z-50 bg-black/70 backdrop-blur-xl border-b border-white/10">
+  <nav class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+    <a href="#" class="text-2xl font-extrabold gradient-text">SE.</a>
+
+    <div class="hidden md:flex gap-8 text-sm text-gray-400">
+      <a href="#home" class="hover:text-white">Home</a>
+      <a href="#about" class="hover:text-white">About</a>
+      <a href="#skills" class="hover:text-white">Skills</a>
+      <a href="#projects" class="hover:text-white">Projects</a>
+      <a href="#contact" class="hover:text-white">Contact</a>
+    </div>
+
+    <a href="#contact" class="px-5 py-2.5 rounded-full bg-violet-600 hover:bg-violet-500 text-sm font-semibold transition">
+      Let's Talk ↗
+    </a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="min-h-screen flex items-center pt-24 px-6 relative overflow-hidden">
+  <div class="absolute w-96 h-96 bg-violet-700/20 blur-[130px] rounded-full top-20 left-1/4"></div>
+
+  <div class="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center relative">
+    <div class="reveal">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-gray-300 mb-8">
+        <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+        Available for opportunities
+      </div>
+
+      <p class="text-gray-400 text-lg mb-3">Hello, I'm</p>
+      <h1 class="text-5xl md:text-7xl font-extrabold leading-tight">
+        Shohruxbek<br>
+        <span class="gradient-text">Egamov.</span>
+      </h1>
+
+      <h2 class="text-xl md:text-2xl text-gray-300 mt-6">
+        Frontend Developer <span class="text-violet-400">✦</span>
+      </h2>
+
+      <p class="text-gray-400 leading-7 mt-6 max-w-lg">
+        I create modern, responsive and beautiful websites.
+        I love turning creative ideas into amazing digital experiences.
+      </p>
+
+      <div class="flex flex-wrap gap-4 mt-9">
+        <a href="#projects" class="px-7 py-4 bg-violet-600 rounded-xl font-semibold hover:bg-violet-500 transition">
+          View My Work ↗
+        </a>
+        <a href="#contact" class="px-7 py-4 glass rounded-xl hover:bg-white/10 transition">
+          Contact Me
+        </a>
+      </div>
+
+      <div class="flex gap-5 mt-10 text-gray-400">
+        <a href="https://github.com/" target="_blank" aria-label="GitHub" class="hover:text-violet-400"><i data-lucide="github"></i></a>
+        <a href="https://t.me/" target="_blank" aria-label="Telegram" class="hover:text-violet-400"><i data-lucide="send"></i></a>
+        <a href="mailto:your@email.com" aria-label="Email" class="hover:text-violet-400"><i data-lucide="mail"></i></a>
+      </div>
+    </div>
+
+    <div class="flex justify-center reveal">
+      <div class="relative w-72 h-72 md:w-96 md:h-96 rounded-full border border-violet-500/30 flex items-center justify-center glow">
+        <div class="absolute inset-5 rounded-full border border-dashed border-violet-400/40 animate-[spin_25s_linear_infinite]"></div>
+        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-violet-600 via-indigo-900 to-black flex items-center justify-center">
+          <span class="text-8xl md:text-9xl font-extrabold gradient-text">SE</span>
+        </div>
+        <div class="absolute -bottom-2 glass rounded-xl px-5 py-3 text-sm">💻 Creative Developer</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-28 px-6 border-t border-white/5">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal">
+      <p class="text-violet-400 font-semibold tracking-widest text-sm">01 / ABOUT ME</p>
+      <h2 class="text-4xl md:text-5xl font-bold mt-4">A little about <span class="gradient-text">me.</span></h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 mt-14">
+      <p class="text-gray-400 text-lg leading-8 reveal">
+        My name is Shohruxbek Egamov. I'm a passionate Frontend Developer
+        who enjoys building clean, modern and user-friendly websites.
+        I focus on writing beautiful code and creating great experiences.
+      </p>
+
+      <div class="grid grid-cols-2 gap-4 reveal">
+        <div class="glass rounded-2xl p-6">
+          <h3 class="text-3xl font-bold gradient-text">01+</h3>
+          <p class="text-gray-400 mt-2 text-sm">Years of learning</p>
+        </div>
+        <div class="glass rounded-2xl p-6">
+          <h3 class="text-3xl font-bold gradient-text">10+</h3>
+          <p class="text-gray-400 mt-2 text-sm">Projects goal</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-28 px-6 bg-white/[0.02]">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal">
+      <p class="text-violet-400 font-semibold tracking-widest text-sm">02 / MY SKILLS</p>
+      <h2 class="text-4xl md:text-5xl font-bold mt-4">My tech <span class="gradient-text">stack.</span></h2>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-14">
+      <div class="glass p-7 rounded-2xl hover:border-orange-500/50 transition reveal">
+        <div class="text-4xl">🌐</div><h3 class="font-bold mt-5">HTML5</h3><p class="text-gray-500 text-sm mt-2">Structure</p>
+      </div>
+      <div class="glass p-7 rounded-2xl hover:border-blue-500/50 transition reveal">
+        <div class="text-4xl">🎨</div><h3 class="font-bold mt-5">CSS3</h3><p class="text-gray-500 text-sm mt-2">Styling</p>
+      </div>
+      <div class="glass p-7 rounded-2xl hover:border-yellow-500/50 transition reveal">
+        <div class="text-4xl">⚡</div><h3 class="font-bold mt-5">JavaScript</h3><p class="text-gray-500 text-sm mt-2">Interactions</p>
+      </div>
+      <div class="glass p-7 rounded-2xl hover:border-cyan-500/50 transition reveal">
+        <div class="text-4xl">💨</div><h3 class="font-bold mt-5">Tailwind CSS</h3><p class="text-gray-500 text-sm mt-2">UI Framework</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-28 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal">
+      <p class="text-violet-400 font-semibold tracking-widest text-sm">03 / PORTFOLIO</p>
+      <h2 class="text-4xl md:text-5xl font-bold mt-4">Featured <span class="gradient-text">projects.</span></h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 mt-14">
+      <div class="glass rounded-3xl overflow-hidden reveal">
+        <div class="h-56 bg-gradient-to-br from-violet-900 to-indigo-950 flex items-center justify-center">
+          <span class="text-6xl">🛍️</span>
+        </div>
+        <div class="p-7">
+          <h3 class="text-xl font-bold">E-Commerce Website</h3>
+          <p class="text-gray-400 mt-3">Modern online shopping experience.</p>
+          <p class="text-violet-400 text-sm mt-5">HTML · CSS · JavaScript</p>
+          <a href="#" class="inline-block mt-5 text-sm hover:text-violet-400">View project ↗</a>
+        </div>
+      </div>
+
+      <div class="glass rounded-3xl overflow-hidden reveal">
+        <div class="h-56 bg-gradient-to-br from-blue-950 to-cyan-950 flex items-center justify-center">
+          <span class="text-6xl">🚀</span>
+        </div>
+        <div class="p-7">
+          <h3 class="text-xl font-bold">Landing Page</h3>
+          <p class="text-gray-400 mt-3">Creative and responsive landing page.</p>
+          <p class="text-violet-400 text-sm mt-5">HTML · Tailwind CSS · JS</p>
+          <a href="#" class="inline-block mt-5 text-sm hover:text-violet-400">View project ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-28 px-6 bg-white/[0.02]">
+  <div class="max-w-4xl mx-auto text-center reveal">
+    <p class="text-violet-400 font-semibold tracking-widest text-sm">04 / CONTACT</p>
+    <h2 class="text-4xl md:text-6xl font-extrabold mt-6">
+      Let's build something <span class="gradient-text">great.</span>
+    </h2>
+    <p class="text-gray-400 mt-6">Have a project in mind? Let's talk about it!</p>
+
+    <a href="mailto:your@email.com" class="inline-block mt-9 px-8 py-4 bg-violet-600 hover:bg-violet-500 rounded-xl font-semibold transition">
+      Say Hello ↗
+    </a>
+  </div>
+</section>
+
+<footer class="border-t border-white/10 py-8 px-6">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-4 text-sm text-gray-500">
+    <p>© 2026 Shohruxbek Egamov. All rights reserved.</p>
+    <p>Designed & Built with ❤️ by Shohruxbek</p>
+  </div>
+</footer>
+
+<script>
+  lucide.createIcons();
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
